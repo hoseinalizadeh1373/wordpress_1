@@ -1,0 +1,13 @@
+vendor
+wordpress
+coverage-report
+coverage.xml
+composer.lock
+plugin.php
+.phpunit.result.cache
+clover.xml
+/coverage-report
+.vscode
+.phpunit.result.cache
+tests/.env
+.vscode

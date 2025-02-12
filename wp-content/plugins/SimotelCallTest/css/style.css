@@ -1,0 +1,35 @@
+/* استایل برای Snackbar */
+#response {
+    position: fixed;
+    bottom: 20px; /* قرار دادن پیام در پایین صفحه */
+    left: 50%;
+    transform: translateX(-50%); /* وسط چین کردن */
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    z-index: 9999;
+    display: none; /* در ابتدا مخفی است */
+    max-width: 300px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#response.show {
+    display: block; /* نمایش دادن snackbar */
+    opacity: 1; /* نمایان کردن snackbar */
+}
+
+/* تغییر رنگ پس زمینه برای پیام موفق */
+#response.success {
+    background-color: #4CAF50;
+}
+
+/* تغییر رنگ پس زمینه برای پیام خطا */
+#response.error {
+    background-color: #f44336;
+}
